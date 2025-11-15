@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas en HTML</h1>
+    <p>El Elemento de Tabla HTML (&lt;table&gt;) representa datos en dos o mas dimensiones.</p>
+    <table>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                Edad
+            </th>
+        </tr>
+        <tr>
+            <td>
+                José
+            </td>
+            <td>
+                Perez
+            </td>
+            <td>
+                50
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Eva
+            </td>
+            <td>
+                Lopez
+            </td>
+            <td>
+                94
+            </td>
+        </tr>
+    </table>
+    <h2>Atributos colspan y caption</h2>
+    <p>El atributo colspan nos permite unir columnas. El atributo caption, aunque poco usado, nos da un nombre para la
+        tabla.</p>
+    <table>
+        <caption>Telefonos</caption>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th colspan="2">
+                Telefono
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Bill Gates
+            </td>
+            <td>
+                55577854
+            </td>
+            <td>
+                55577855
+            </td>
+        </tr>
+    </table>
+    <h2>Atributo rowspan</h2>
+    <p>El atributo colspan nos permite unir filas.</p>
+    <table>
+        <caption>Telefonos</caption>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <td>
+                Juan
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefono</th>
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+    </table>
+    <h2>Atributos por columna: colgroup y col</h2>
+    <p>Estos atributos permiten aplicar estilos por columnas</p>
+    <table>
+        <colgroup>
+            <col style="background-color:red">
+            <col style="background-color:yellow">
+            <col style="background-color:green">
+        </colgroup>
+        <tr>
+            <th>
+                ISBN
+            </th>
+            <th>
+                Titulo
+            </th>
+            <th>
+                Precio
+            </th>
+        </tr>
+        <tr>
+            <td>
+                347
+            </td>
+            <td>
+                Empezando HTML
+            </td>
+            <td>
+                53€
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5869207
+            </td>
+            <td>
+                Intro a CSS
+            </td>
+            <td>
+                49€
+            </td>
+        </tr>
+    </table>
+    <br>
+    <a href="../index.html">Volver al Inicio</a>
+</body>
+
+</html>
