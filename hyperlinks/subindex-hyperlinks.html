@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="inicio">Enlaces en HTML</h1>
+    <h2>En este capitulo vamos a conocer los enlaces y como funcionan.</h2>
+    <div>
+        <h3>Enlace</h3>
+        <p>La etiqueta de enlace es la siguiente:</p>
+        <pre>&lt;a href="https://www.iesjuanbosco.es/" target="_blank"&gt;Visita nuestro Instituto&lt;/a&gt;</pre>
+        <p>Aqui podemos identificar los atributos siguientes</p>
+        <ul>
+            <li>href: Que nos indica a donde apunta el enlace</li>
+            <li>target</li>
+        </ul>
+        <p>El atributo de target puede tener uno de los siguientes valores:</p>
+        <ul>
+            <li>
+                <pre>_blank</pre>Abre el documento vinculado en una nueva ventana o pestaña
+                <p><a href="https://longdogechallenge.com/" target="_blank">Long Doge Challenge</a></p>
+            </li>
+            <li>
+                <pre>_self</pre>Abre el documento vinculado en la misma ventana / pestaña en la que se hizo clic (esto
+                es
+                predeterminado)
+                <p><a href="https://memory.toys/classic/easy/" target="_self">Memory Game</a></p>
+            </li>
+            <li>
+                <pre>_parent</pre>Abre el documento vinculado en el marco primario
+                <p><a href="https://sliding.toys/mystic-square/8-puzzle/daily/" target="_parent">Puzzle</a></p>
+            </li>
+            <li>
+                <pre>_top</pre>Abre el documento vinculado en el cuerpo completo de la ventana
+                <p><a href="https://paint.toys/calligram/" target="_top">Caligrama</a></p>
+            </li>
+        </ul>
+        <p>Tambien podemos añadir una imagen como texto del enlace. El ejemplo siguiente lo podemos ver:</p>
+        <a href="https://game-icons.net/1x1/delapouite/calendar.html"> <img style="width: 96px; height: 96px;"
+                src="../assets/icons/calendar-icon-svg.svg" alt="icono de calendario"> </a>
+    </div>
+    <div>
+        <h3>Enlace en la misma web</h3>
+        <p>Este enlace nos llevará a una pagina dentro de nuestra propia web</p>
+        <a href="../hyperlinks/linked-page.html">Ir a</a>
+        <p>Este enlace nos llevará a una pagina dentro de otro directorio de nuestra propia web</p>
+        <a href="../hyperlinks/subfolder/linked-page-subfolder.html">Ir a</a>
+    </div>
+    <div>
+        <h3>Enlace para descargar un archivo</h3>
+        <p>Este enlace descargara un fichero</p>
+        <a href="../assets/images/kitty.jpg" download>
+            <img src="../assets/images/kitty.jpg" alt="A Kitty" width="150" height="150"> </a>
+    </div>
+    <div>
+        <h3>Marcador o Bookmark</h3>
+        <p>Un marcador es un enlace a una parte concreta de la pagina web en la que estamos o, si es a otra pagina, a
+            una parte especifica de la misma</p>
+        <p>Vamos a crear un marcador que nos lleve al principio de la pagina</p>
+        <a href="#inicio">Aqui nos lleva al inicio de la pagina en la que estamos ahora mismo.</a>
+        <p>Vamos a crear un marcador que nos lleve al principio de la pagina</p>
+        <a href="../hyperlinks/subfolder/linked-page-subfolder.html#subinicio">Aqui nos lleva al inicio de otra pagina
+            distinta.</a>
+    </div>
+    <a href="../index.html">Volver al Inicio</a>
+</body>
+
+</html>
