@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formularios en HTML</h1>
+    <p>El elemento HTML &lt;form&gt; representa una sección de un documento que contiene controles interactivos para
+        que los usuarios
+        puedan enviar información a un servidor web.
+        Este elemento es fundamental para crear formularios en páginas web, permitiendo la entrada de datos como texto,
+        fechas, archivos, entre otros.
+    </p>
+    <h2>Ejemplo de formulario GET</h2>
+    <form action="/procesa.php" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre" value="">
+            </p>
+            <br>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" type="text" name="apellidos" value="">
+            </p>
+            <br><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Ejemplo de formulario POST</h2>
+    <form action="/procesa.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre" value="">
+            </p>
+            <br>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" type="text" name="apellidos" value="">
+            </p>
+            <br><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <a href="../index.html">Volver al Inicio</a>
+</body>
+
+</html>
